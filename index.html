@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>AI Spanish Poem</title>
   </head>
@@ -13,7 +14,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of the poem Spanish Poem"
@@ -25,13 +26,7 @@
           <input type="submit" class="submit-button" />
         </form>
 
-        <div class="poem">
-          Podrá nublarse el sol eternamente;
-
-          <br />
-          Podrá secarse en un instante el mar;
-          <br />
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
 
       <footer>
@@ -52,6 +47,6 @@
         >
       </footer>
     </div>
-    <script src="'src/script.js"></script>
+    <script src="src/script.js"></script>
   </body>
 </html>
